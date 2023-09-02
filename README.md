@@ -8,6 +8,10 @@ accumulated vast data about bike rentals and station utilization as it expanded 
 gain deeper insights into their business and enhance their services, Zen City embarked on a
 data-driven journey, and you will take part in it.
 
+The mission? To optimize the bicycle rental system in London and increase the number of rentals in the next quarter.
+
+We went through various stages of analysis, from dealing with untidy data, identifying trends and seasonality, leveraging spatial analysis capabilities, to building a regression model for future prediction.
+
 Data Description: The dataset contains the following columns:
 - bigquery-public-data.london_bicycles.cycle_hire *filtered for Q1 2021 
 
