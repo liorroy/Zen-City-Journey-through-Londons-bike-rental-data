@@ -2,7 +2,7 @@
 Zen City's Journey through London's bike rental data
 
 Introduction:
-In the bustling city of Zen, the need for a sustainable & efficient transportation system led to
+In the bustling city of London, the need for a sustainable & efficient transportation system led to
 "Zen City", a bike rental company with a mission to promote eco-friendly commuting. Zen City
 accumulated vast data about bike rentals and station utilization as it expanded its operations. To
 gain deeper insights into their business and enhance their services, Zen City embarked on a
