@@ -9,35 +9,108 @@ gain deeper insights into their business and enhance their services, Zen City em
 data-driven journey, and you will take part in it.
 
 Data Description: The dataset contains the following columns:
- name: The name of the song
+- bigquery-public-data.london_bicycles.cycle_hire *filtered for Q1 2021 
 
-● duration: The duration of the song in seconds
+[https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_hire
+](url)
 
-● release_date: The date when the song was released
 
-● album_name: The name of the album the song belongs to
+Field name & Description:
 
-● explicit: A boolean value indicating whether the song contains explicit content
+● id:
+A unique identifier for each record in the dataset (for each station)
 
-● popularity: The popularity score of the song
+● installed:
+Indicates whether a bike station is currently installed (TRUE) or not (FALSE)
 
-● acousticness: A measure of the acoustic quality of the song
+● latitude:
+The geographical latitude coordinate of the bike station's location
 
-● danceability: A measure of how suitable the song is for dancing
+● locked:
+Indicates the locking status of the bike station
 
-● energy: A measure of the intensity and activity of the song
+● longitude:
+The geographical longitude coordinate of the bike station's location
 
-● instrumentalness: A measure of the instrumental content of the song
+● name:
+The name or identifier of the bike station
 
-● liveness: A measure of the presence of a live audience in the recording
+● bikes_count:
+The number of available bikes at the bike station
 
-● loudness: The overall loudness of the song
+● docks_count:
+The total number of docking spaces available at the bike station
 
-● speechiness: A measure of the presence of spoken words in the song
+● nbEmptyDocks:
+The number of empty docking spaces at the bike station
 
-● tempo: The tempo of the song in beats per minute
+● temporary:
+Indicates whether the bike station is temporary (TRUE) or permanent (FALSE)
 
-● time_signature: The time signature of the song
+● terminal_name:
+The name or identifier of the terminal associated with the bike station
+
+● install_date:
+The date on which the bike station was installed
+
+● removal_date:
+The date on which the bike station was removed, if applicable
+
+
+*These columns provide essential information about each bike station, including its location, availability, capacity, and installation details. Analyzing this data can offer insights into bike station utilization, availability trends, and spatial distribution.
+
+- bigquery-public-data.london_bicycles.cycle_stations *not filtered for Q1 2021
+
+[https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_stations
+](url)
+
+
+Field name & Description:
+
+● rental_id:
+A unique identifier for each bike rental transaction
+
+● duration:
+The duration of the bike trip in seconds. It represents the time the bike was rented until it was  returned
+
+● duration_ms
+The duration of the bike trip in milliseconds. This can provide more precise timing for analysis
+
+● bike_id:
+Identifier for the bike used in the rental
+
+● bike_model:
+The model of the bike that was rented
+
+● end_date:
+The timestamp indicating when the bike rental ended
+
+● end_station_id:
+The identifier of the station where the bike was returned at the end of the rental
+
+● end_station_name:
+The name of the station where the bike was returned
+
+● start_date:
+The timestamp indicating when the bike rental started
+
+● start_station_id:
+The identifier of the station where the bike was rented
+
+● start_station_name:
+The name of the station where the bike was rented
+
+● end_station_logical_terminal:
+The logical terminal associated with the end station
+
+● start_station_logical_terminal:
+The logical terminal associated with the start station
+
+● end_station_priority_id:
+An identifier indicating the priority of the end station
+
+
+*These columns provide essential information about each bike rental (trip), including its starting and ending stations, the star and end date’s and the duration of the rental. Analyzing this data can offer insights into bike station utilization, availability trends, and spatial distribution.
 
 
 Chapter 1: Facing the Business Topic
