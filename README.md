@@ -1,7 +1,20 @@
+
+## Agenda
+
+| *Agenda* | 
+| ----------- | 
+| Introduction: free Vs paid apps | 
+| Diving Deeper: Developer Insights |
+| Exploring Seasonal trends |
+| Effect of In - App advertisment | 
+| Conclusive Insights & Recommendations | 
+
+
+
 # Zen-City-s-Journey-through-London-s-bike-rental-data
 Zen City's Journey through London's bike rental data
 
-Introduction:
+## Introduction
 In the bustling city of London, the need for a sustainable & efficient transportation system led to
 "Zen City", a bike rental company with a mission to promote eco-friendly commuting. Zen City
 accumulated vast data about bike rentals and station utilization as it expanded its operations. To
@@ -12,14 +25,28 @@ The mission? To optimize the bicycle rental system in London and increase the nu
 
 We went through various stages of analysis, from dealing with untidy data, identifying trends and seasonality, leveraging spatial analysis capabilities, to building a regression model for future prediction.
 
-Data Description: The dataset contains the following columns:
-- bigquery-public-data.london_bicycles.cycle_hire *filtered for Q1 2021 
+## Data Description: The dataset contains the following columns:
+- bigquery-public-data.london_bicycles.cycle_hire *filtered for Q1 2021
 
+- [x] Data Source [Open Data on Medical Cannabis csv](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_hire)
 [https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_hire
 ](url)
 
 
-Field name & Description:
+| *Field name* | *Description* |
+| ----------- | ----------- |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| installed: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+| id: | A unique identifier for each record in the dataset (for each station) |
+
 
 ● id:
 A unique identifier for each record in the dataset (for each station)
@@ -182,3 +209,20 @@ statistical knowledge you acquired so far.
 Prediction Question:
 Predict how many rentals will be made in the next month (April 2021) in “Albert Gate,
 Hyde Park” bike station.
+
+## Technologies Used:
+- [x] Data Source [Open Data on Medical Cannabis csv](https://www.meida.org.il/?p=11491)
+- [x] SQL table - hosted on Google BigQuery
+- [x] Presentation - Canva
+
+## The Presentation
+![Presentation1](png/1.png)
+![Presentation2](png/2.png)
+![Presentation3](png/3.png)
+![Presentation4](png/4.png)
+![Presentation5](png/5.png)
+![Presentation6](png/6.png)
+![Presentation7](png/7.png)
+![Presentation8](png/8.png)
+![Presentation9](png/9.png)
+![Presentation10](png/10.png)
