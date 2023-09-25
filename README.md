@@ -1,5 +1,8 @@
 # Zen-City-s-Journey-through-London-s-bike-rental-data
+
 Zen City's Data Driven Journey through London's bike rental data
+
+![Presentation0](png/img0.png)
 
 ## Team Members
 
@@ -69,6 +72,7 @@ We went through various stages of analysis, from dealing with untidy data, ident
 
 *These columns provide essential information about each bike rental (trip), including its starting and ending stations, the star and end date’s and the duration of the rental. Analyzing this data can offer insights into bike station utilization, availability trends, and spatial distribution.
 
+![Presentation0](png/img1.png)
 
 ## Chapter 1: Facing the Business Topic
 Goal: Optimize the business for more bike rentals in Q2 2021.
