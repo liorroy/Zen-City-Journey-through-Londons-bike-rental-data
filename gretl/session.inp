@@ -1,0 +1,30 @@
+# Log started 2023-08-24 21:55
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open /Users/study/Desktop/albert_gate.xlsx
+setobs 7 2021-01-01 --time-series
+genr index
+genr time
+delete index
+square time
+setinfo day --description="The date"
+gnuplot num_of_rides --time-series --with-lines
+gnuplot day --time-series --with-lines
+setinfo num_of_rides --description="The number of rides for the day"
+gnuplot day --time-series --with-lines
+# model 1
+ols num_of_rides 0 time sq_time
+square day
+# model 2
+ols num_of_rides 0 day sq_day
+# model 3
+ols num_of_rides 0 time
+dataset addobs 30
+fcast 2021-04-01 2021-04-30 --static
+# model 1
+vif
+bkw
+fcast 2021-04-01 2021-04-30 --static
+fcast 2021-04-01 2021-04-30 --static
+fcast 2021-04-01 2021-04-30 --static
+fcast 2021-04-01 2021-04-30 --static
