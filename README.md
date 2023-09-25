@@ -1,5 +1,11 @@
 # Zen-City-s-Journey-through-London-s-bike-rental-data
-Zen City's Journey through London's bike rental data
+Zen City's Data Driven Journey through London's bike rental data
+
+## Team Members
+
+[Lior Roytburd](https://www.linkedin.com/in/lior-roytburd/)
+
+[Daniel Edri](https://www.linkedin.com/in/danieledri/)
 
 ## Introduction
 In the bustling city of London, the need for a sustainable & efficient transportation system led to
@@ -130,7 +136,7 @@ Predict how many rentals will be made in the next month (April 2021) in “Alber
 Hyde Park” bike station.
 
 ## Technologies Used:
-- [x] SQL tables - hosted on Google BigQuery
+- [x] SQL tables - hosted on Google BigQuery [Link to SQL script](BigQuerySQLScript)
 - [x] Google Sheets & Microsoft Excel 
 - [x] Econometric analysis (Linear Regression) - gretl
 - [x] Presentation - Google Slides
@@ -147,4 +153,10 @@ Hyde Park” bike station.
 ![Presentation9](png/9.png)
 ![Presentation10](png/10.png)
 
-## Thank you for your time and attention
+## Summary
+
+We had a great time and learnt a lot along the way.
+
+It was intresting working as a team and diving into the data.
+
+Thank you for your time and attention!
