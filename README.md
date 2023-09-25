@@ -12,12 +12,13 @@ The mission? To optimize the bicycle rental system in London and increase the nu
 
 We went through various stages of analysis, from dealing with untidy data, identifying trends and seasonality, leveraging spatial analysis capabilities, to building a regression model for future prediction.
 
-## Data Description: The dataset contains the following columns:
+## Data Description: The dataset contains the two following tables:
 
-- bigquery-public-data.london_bicycles.cycle_stations *not filtered for Q1 2021
-- [x] Data Source: bigquery-public-data.london_bicycles.cycle_stations *not filtered for Q1 2021 [Open Data on Google BigQuery](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_stations)
-[https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_stations
-](url)
+- The cycle_stations_pro table provides information about each bike station's location and capacity:
+
+- [x] Data Source: bigquery-public-data.london_bicycles.cycle_stations [Open Data on Google BigQuery](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_stations)
+
+[https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_stations](url)
 
 | *Field name* | *Description* |
 | ----------- | ----------- |
@@ -34,12 +35,14 @@ We went through various stages of analysis, from dealing with untidy data, ident
 | terminal_name | The name or identifier of the terminal associated with the bike station  |
 | install_date | The date on which the bike station was installed |
 | removal_date  | The date on which the bike station was removed, if applicable |
+
 *These columns provide essential information about each bike station, including its location, availability, capacity, and installation details. Analyzing this data can offer insights into bike station utilization, availability trends, and spatial distribution.
 
-- bigquery-public-data.london_bicycles.cycle_hire *filtered for Q1 2021
+- The cycle_hire_new table contains information about each bike rental transaction.
+
 - [x] Data Source: bigquery-public-data.london_bicycles.cycle_hire *filtered for Q1 2021 [Open Data on Google BigQuery](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_hire)
-[https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_hire
-](url)
+
+[https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2slondon_bicycles!3scycle_hire](url)
 
 | *Field name* | *Description* |
 | ----------- | ----------- |
@@ -57,11 +60,12 @@ We went through various stages of analysis, from dealing with untidy data, ident
 | end_station_logical_terminal | The logical terminal associated with the end station |
 | start_station_logical_terminal | The logical terminal associated with the start station |
 | end_station_priority_id | An identifier indicating the priority of the end station |
+
 *These columns provide essential information about each bike rental (trip), including its starting and ending stations, the star and end date’s and the duration of the rental. Analyzing this data can offer insights into bike station utilization, availability trends, and spatial distribution.
 
 
 ## Chapter 1: Facing the Business Topic
-# Goal: Optimize the business for more bike rentals in Q2 2021.
+Goal: Optimize the business for more bike rentals in Q2 2021.
 Q1 2021 is the business quarter number 1, starting in January & ending in March. Your data
 describes these months only. Q2 2021 is the next quarter - April to June 2021, included.
 Zen City has strategically positioned bike stations to facilitate rider accessibility. However, they
@@ -74,8 +78,8 @@ increase its user base, and aim for the target of increasing the bike rentals du
 ## Chapter 2: Data Exploration
 To tackle these challenges, you got two key tables:
 - The cycle_hire_new table contains information about each bike rental transaction.
-- The cycle_stations_pro table provides information about each bike station's location
-and capacity.
+- The cycle_stations_pro table provides information about each bike station's location and capacity.
+
 Suggested ways to think about the data:
 
 - Can you identify any temporal patterns? seasonal trends?
