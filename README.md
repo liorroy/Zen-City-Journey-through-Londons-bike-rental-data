@@ -140,7 +140,7 @@ Predict how many rentals will be made in the next month (April 2021) in “Alber
 Hyde Park” bike station.
 
 ## Technologies Used:
-- [x] SQL tables - hosted on Google BigQuery [Link to SQL script](BigQuerySQLScript)
+- [x] SQL tables - hosted on Google BigQuery [Link to SQL script](BigQuerySQLScript.sql)
 - [x] Google Sheets & Microsoft Excel 
 - [x] Econometric analysis (Linear Regression) - gretl
 - [x] Presentation - Google Slides
